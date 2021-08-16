@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    /* --primary-color: #c56ad146; */
+    --primary-color: #7C3AED;
+    --dark-gray: #f1f3f7;
+    --off-white: #e5e6eb0e;
+    /* --dark-gray: #ffffff00;
+    --off-white: #ffffff3b; */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    /* background-color: #212329fd; */
+    color: white;
+    background: #009FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #ec2F4B, #009FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #ec2F4B, #009FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+scroll-behavior: smooth;
+
+    
+
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/* spaces */
+
+.margin-md{
+    padding: 30rem;
+}
+
+/* container */
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.container-centers {
+    max-width: 80%;
+    margin: auto;
+}
+
+/** links **/
+.link{
+    text-decoration: none;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+}
+.link-social{
+    text-decoration: none;
+    margin: 2rem;
+    /* padding: 7rem -2rem; */
+}
+
+/* BEM Namming */
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+.link-secondary {
+    color: white;
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    display: block;
+    max-width: 140px;
+    margin: 1rem 1rem 1rem 0rem;
+}
+
+
+
+/* lists */
+
+.list-remove-bullet {
+    padding-inline-start: 0px;
+    list-style: none;
+    
+}
+
+.list-remove-bullets {
+    padding: 1rem;
+}
+
+
+.list-item-inline {
+    display: inline;
+    padding: 0rem 0.5rem;
+}
+
+/** navigation **/
+
+nav,
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px 5px var(--primary-color);
+    min-height: 10vh;
+    flex-direction: column;
+}
+
+.footer-pills{
+    padding: 0px;
+}
+.inline-list-items {
+    display: inline;
+}
+
+
+.brand-link {
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.nav-li {
+    padding: 1rem 2rem;
+}
+
+
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+@media screen and (max-width:900px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding: 0%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* header */
+
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+
+}
+
+.hero-less-padding {
+    padding: 2rem;
+    padding-top: 2rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.hero-less-paddings {
+    padding: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+
+
+
+.hero .hero-img {
+    max-width: 80%;
+    width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero-less-padding .hero-big-img {
+    max-width: 80%;
+    width: 750px;
+    display: block;
+    margin: auto;
+    
+  
+}
+
+.hero-less-paddings .hero-big-imgs {
+    max-width: 80%;
+    width: 60%;
+    height: 300px;
+    display: inline;
+    margin: 1% 1%;
+  
+}
+
+
+.hero .hero-heading {
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-inverted {
+    color: #5B21B6;
+}
+
+/* section */
+
+.section {
+    padding: 2rem;
+}
+
+.section h1{
+    text-align: center;
+
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+
+/* projects */
+.showcase-list {
+    padding: 2rem;
+}
+
+.showcase-blog {
+    padding-bottom: 6rem;
+}
+
+/* blopost */
+
+
+
+.hov li{
+    display: inline-block;
+	list-style: none;
+	transition: all ease-in-out 250ms;
+	border-radius:90%;
+}
+
+.hov ul li:hover{
+
+	width:35px;
+	height:35px;
+	background: transparent;
+	box-shadow: 0 0 0 40px rgba(255,255,255,0.05),
+				0 0 45px rgba(255,255,255,0.05),
+				0 0 45px rgba(255,255,255,0.05),
+				0 0 0 75px rgba(255,255,255,0.05);
+
+
+}
+
+.col {
+    color: #5B21B6;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* aside */
+
+.main-aside {
+    display: inline-block;
+    width: 15%;
+    vertical-align: top;
+    margin-left: 8%;
+    margin-top: 1.5rem;
+    
+}
+
+.widget {
+    border-top: 4px solid black;
+}
+
+.widget input {
+    display: block;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 4px;
+    color: white;
+    font-size:1.2rem;
+}
+
+button[type="submit"] {
+    font: size 1.2rem;
+    /* border-radius: 2rem; */
+    margin : 2px;
+    padding: 10px;
+    letter-spacing:3px;
+    border: none;
+    
+}
+
+.widget-title {
+    font-size:1.5rem;
+}
+
+.showcase-blog{
+    width:60%;
+    display: inline-block;
+    padding-left:1rem;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+}
+
+
+.btn-grad {background-image: linear-gradient(to right, #d81e6c 0%, #ffffff  51%, #a11df8  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   /* box-shadow: 0 0 20px #eee; */
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .marg {
+    border-top: 4px solid black;
+    padding-top: 8px;
+
+ }
+
+ input {
+     border: none;
+ }
+
+ .author {
+     margin-top: 0.3rem;
+     width: 10%;
+     display: inline-block;
+     vertical-align: top;
+     padding-left: 0.8rem;
+     padding-right: 0.3rem;
+ } 
+
+ .sec-blog {
+     width:80%;
+     margin: auto;
+     margin-bottom: 2rem;
+     margin-top: -7rem;
+     
+ }
+
+ .round {
+     border-radius: 9rem;
+     width:100%;
+ }
+
+ .round:hover {
+    box-shadow: 0 0 0 40px rgba(255,255,255,0.05),
+    0 0 45px rgba(255,255,255,0.05),
+    0 0 45px rgba(255,255,255,0.05),
+    0 0 0 75px rgba(255,255,255,0.05);
+
+ }
